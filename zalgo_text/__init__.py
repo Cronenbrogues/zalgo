@@ -1,4 +1,4 @@
 from .zalgo import zalgo
 
 
-__all__ = ['zalgo']
+__all__ = ["zalgo"]
