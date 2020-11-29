@@ -5,6 +5,12 @@ A small library to create zalgo text
 You can install this package from pip with:
 ```pip install zalgo_text```
 
+Or add the following line to your project's `requirements.txt`
+
+```
+git+https://github.com/flosincapite/zalgo
+```
+
 Then in your project you can use it like so:
 
     from zalgo_text import zalgo    
