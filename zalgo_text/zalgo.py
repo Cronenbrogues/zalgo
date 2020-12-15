@@ -7,6 +7,7 @@ class zalgo:
         self.numAccentsDown = (1, 3)
         self.numAccentsMiddle = (1, 2)
         self.maxAccentsPerLetter = 3
+        self.zalgoChance = 1
         self.dd = [
             "̖",
             " ̗",
@@ -135,6 +136,9 @@ class zalgo:
 
             if not a.isalpha():
                 newLetters.append(a)
+                continue
+
+            if random.random() >= self.zalgoChance:
                 continue
 
             numAccents = 0
