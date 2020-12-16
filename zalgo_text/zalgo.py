@@ -139,6 +139,7 @@ class zalgo:
                 continue
 
             if random.random() >= self.zalgoChance:
+                newLetters.append(a)
                 continue
 
             numAccents = 0
