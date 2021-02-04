@@ -142,9 +142,7 @@ class zalgo:
             numD = random.randint(self.numAccentsDown[0], self.numAccentsDown[1])
             numM = random.randint(self.numAccentsMiddle[0], self.numAccentsMiddle[1])
             while numAccents < self.maxAccentsPerLetter and numU + numM + numD != 0:
-                randint = random.randint(
-                    0, 2
-                )
+                randint = random.randint(0, 2)
                 if randint == 0:
                     if numU > 0:
                         a = self.combineWithDiacritic(a, self.du)
